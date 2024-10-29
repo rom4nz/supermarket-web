@@ -11,7 +11,7 @@ public class DBConnect
 		try 
 		{
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			conn = DriverManager.getConnection("jdbc:mysql://localhost:3307/supermarket-web","root","roman");
+			conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/supermarket-web","root","roman");
 		} 
 		catch (Exception e) 
 		{
