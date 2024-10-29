@@ -1,3 +1,5 @@
+<%@ page import="java.sql.Connection" %>
+<%@page import="com.DB.DBConnect"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -34,6 +36,10 @@
 	<div class="container-fluid back-img">
 		<h2 class="text-center text-danger">Super Market</h2>
 	</div>
+	
+	<% Connection conn=DBConnect.getConn();
+	out.println(conn);
+	%>
 	
 	<hr>
 	<!-- Grocery Start -->
